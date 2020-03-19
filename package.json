@@ -1,0 +1,43 @@
+{
+  "name": "axios-kerberos",
+  "version": "1.0.0",
+  "description": "Wrapper over axios to add kerberos authentication",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "lint": "eslint src/index.js",
+    "babel": "babel src/index.js -d dist",
+    "build": "npm run lint && rimraf dist && npm run babel",
+    "test": "echo \"no test specified\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunjit3/axios-kerberos"
+  },
+  "keywords": [
+    "axios",
+    "kerberos"
+  ],
+  "author": {
+    "name": "Gunjit Mishra",
+    "email": "gunjit3788@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gunjit3/axios-kerberos"
+  },
+  "homepage": "https://github.com/gunjit3/axios-kerberos#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/runtime": "^7.8.7",
+    "eslint": "^6.8.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "kerberos": "^1.1.3"
+  }
+}
